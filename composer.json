@@ -1,0 +1,37 @@
+{
+    "name": "lx3gp/think-jwt",
+    "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+    "homepage": "https://github.com/lx3gp/think-jwt",
+    "keywords": [
+        "thinkphp",
+        "php7.1",
+        "jwt"
+    ],
+    "authors": [
+        {
+            "name": "Neuman Vong",
+            "email": "neuman+pear@twilio.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Anant Narayanan",
+            "email": "anant@php.net",
+            "role": "Developer"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": "^7.1||^8.0"
+    },
+    "suggest": {
+        "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
+    },
+    "autoload": {
+        "psr-4": {
+			"think\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5||9.5"
+    }
+}
