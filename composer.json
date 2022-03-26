@@ -17,6 +17,11 @@
             "name": "Anant Narayanan",
             "email": "anant@php.net",
             "role": "Developer"
+        },
+        {
+            "name": "dreamlee",
+            "email": "1755773846@qq.com",
+            "role": "Developer"
         }
     ],
     "license": "BSD-3-Clause",
@@ -31,7 +36,19 @@
 			"think\\": "src/"
         }
     },
+    "extra": {
+        "think": {
+            "config":{
+                "jwt": "src/config/jwt.php"
+            }
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^7.5||9.5"
+    }
+    "scripts" : {
+        "post-install-cmd": [
+            "php think jwt:config"
+        ]
     }
 }
