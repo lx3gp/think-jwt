@@ -13,7 +13,7 @@ Installation
 Use composer to manage your dependencies and download PHP-JWT:
 
 ```bash
-composer require firebase/php-jwt
+composer require lx3gp/think-jwt
 ```
 
 Optionally, install the `paragonie/sodium_compat` package from composer if your
