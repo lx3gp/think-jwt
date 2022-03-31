@@ -1,6 +1,6 @@
 <?php
 
-namespace think;
+namespace think\JWT;
 
 use DomainException;
 use InvalidArgumentException;

@@ -1,6 +1,6 @@
 <?php
 
-namespace think;
+namespace think\JWT;
 
 class ExpiredException extends \UnexpectedValueException
 {
