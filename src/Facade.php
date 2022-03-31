@@ -1,5 +1,5 @@
 <?php
-namespace think\JWT;
+namespace think;
 
 class Facade
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace think\JWT;
+namespace think;
 
 use OpenSSLAsymmetricKey;
 use OpenSSLCertificate;

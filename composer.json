@@ -9,22 +9,12 @@
     ],
     "authors": [
         {
-            "name": "Neuman Vong",
-            "email": "neuman+pear@twilio.com",
-            "role": "Developer"
-        },
-        {
-            "name": "Anant Narayanan",
-            "email": "anant@php.net",
-            "role": "Developer"
-        },
-        {
             "name": "dreamlee",
             "email": "1755773846@qq.com",
             "role": "Developer"
         }
     ],
-    "license": "BSD-3-Clause",
+    "license": "Apache-2.0",
     "require": {
         "php": "^7.1||^8.0"
     },
