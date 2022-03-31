@@ -1,9 +1,9 @@
 <?php
-namespace think\jwt;
+namespace think;
 
 use think\jwt\JWT;
 
-class Facade
+class JWE
 {
     //  定义变量
     private static $key;           //  密匙
