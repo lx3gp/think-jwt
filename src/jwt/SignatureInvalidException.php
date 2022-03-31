@@ -1,6 +1,6 @@
 <?php
 
-namespace think\JWT;
+namespace think\jwt;
 
 class SignatureInvalidException extends \UnexpectedValueException
 {

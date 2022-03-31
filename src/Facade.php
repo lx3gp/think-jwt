@@ -1,6 +1,7 @@
 <?php
 namespace think;
 
+use think\jwt\JWT;
 class Facade
 {
     //  定义变量
@@ -32,11 +33,11 @@ class Facade
             JWT::$leeway = 60;//当前时间减去60，把时间留点余地
             $decoded = JWT::decode($token, new Key(self::getKey(),  self::getMethod())); //HS256方式，这里要和签发的时候对应
             $result = ['code'=>200, 'mgs'=>'success', 'data'=>(array) $decoded->data];
-        } catch(\think\JWT\SignatureInvalidException $e) {  //签名不正确
+        } catch(\think\jwt\SignatureInvalidException $e) {  //签名不正确
             $result['data'] = $e->getMessage();
-        }catch(\think\JWT\BeforeValidException $e) {  // 签名在某个时间点之后才能用
+        }catch(\think\jwt\BeforeValidException $e) {  // 签名在某个时间点之后才能用
             $result['data'] = $e->getMessage();
-        }catch(\think\JWT\ExpiredException $e) {  // token过期
+        }catch(\think\jwt\ExpiredException $e) {  // token过期
             $result['data'] = $e->getMessage();
         }catch(\Exception $e) {  //其他错误
             $result['data'] = $e->getMessage();
