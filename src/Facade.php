@@ -1,7 +1,8 @@
 <?php
-namespace think;
+namespace think\jwt;
 
 use think\jwt\JWT;
+
 class Facade
 {
     //  定义变量
