@@ -2,7 +2,7 @@
 namespace think;
 
 use think\jwt\JWT;
-
+use think\jwt\Key;
 class JWE
 {
     //  定义变量
